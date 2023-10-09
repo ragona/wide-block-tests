@@ -6,3 +6,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+aes-gcm = "0.10.3"
+ring = "0.17.2"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "ring_aes_gcm"
+harness = false
+
+[[bench]]
+name = "rust_crypto_aes_gcm"
+harness = false
