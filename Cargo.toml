@@ -7,6 +7,8 @@ edition = "2021"
 
 [dependencies]
 aes-gcm = "0.10.3"
+num_cpus = "1.16.0"
+rayon = "1.8.0"
 ring = "0.17.2"
 
 [dev-dependencies]
@@ -14,8 +16,4 @@ criterion = "0.5.1"
 
 [[bench]]
 name = "ring_aes_gcm"
-harness = false
-
-[[bench]]
-name = "rust_crypto_aes_gcm"
 harness = false
